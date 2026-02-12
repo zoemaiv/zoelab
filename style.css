@@ -1,0 +1,178 @@
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    background-color: rgb(201, 178, 214);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+/* This part of the code executes when device res is below 850px, allows responsiveness  */
+
+@media (max-width: 850px) {
+    .navbar {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .logocontainer {
+        display: none;
+    }
+    
+    .socials {
+        display: flex;
+        width: auto;
+    }
+
+    .socialsbuttons {
+        width: 30px;
+    }
+}
+
+/* Navigation bar code */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    margin-bottom: 5px;
+}
+
+.logocontainer {
+    cursor: pointer;
+    width: 250px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.buttontext {
+    transition: all 0.3s ease 0s;
+    font-weight: 550;
+    font-size: 24px;
+}
+
+.buttontext:hover {
+    color: rgb(98, 34, 202);
+    font-size: 26px;
+    opacity: 0.6;
+}
+
+.socials {
+    display: flex;
+    gap: 6px;
+    justify-content: space-around;
+    width: 250px;
+    color: white;
+}
+
+.socialsbuttons {
+    width: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.socialsbuttons:hover {
+    opacity: 0.6;
+    width: 55px;
+}
+
+/* Resume Index */
+
+.resumephoto {
+    margin-right: 10px;
+    width: 120px;
+}
+
+img.headshotimg {
+    width: 100%;
+    border-radius: 60px;
+}
+
+img.headshotimg:hover {
+    border-radius: 60px;
+    opacity: 0.6;
+}
+
+.resumeheadcontainer {
+    padding: 5%;
+}
+
+.resumelocation, .resumemail, .resumetel {
+    display: flex;
+}
+
+.resumeiconcontainer {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.resumeicon {  
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.resumeicon:hover {
+    opacity: 0.6;
+    width: 105%;
+}
+
+.resumeheadtext {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.resumeheadtext a:hover {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 19px;
+}
+
+.resumenametext {
+    font-size: 24px;
+}
+
+.projectscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 10%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.project1, .project2, .project3 {
+    width: 400px;
+    height: 600px;
+} 
+
+.projectimage {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    border-radius: 21px;
+}
+
+.projectimage:hover {
+    opacity: 0.6;
+}
