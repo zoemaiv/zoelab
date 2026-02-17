@@ -16,25 +16,20 @@ a {
 
 /* This part of the code executes when device res is below 850px, allows responsiveness  */
 
-@media (max-width: 850px) {
+@media (max-width: 700px) {
     .navbar {
         padding: 10px 0px;
         display: flex;
-        justify-content: space-evenly;
-        align-content: center;
+        justify-content: center;
+
     }
 
     .logocontainer {
         display: none;
     }
-    
-    .socials {
-        display: flex;
-        width: auto;
-    }
 
-    .socialsbuttons {
-        width: 30px;
+    .socials a {
+        display: none;
     }
 }
 
@@ -42,7 +37,7 @@ a {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px 10%;
     margin-bottom: 5px;
@@ -95,6 +90,12 @@ a {
     width: 55px;
 }
 
+/* Home Styles */
+
+.homecontainer {
+    padding: 10px 12%;
+}
+
 /* Resume Index */
 
 .resumephoto {
@@ -113,7 +114,7 @@ img.headshotimg:hover {
 }
 
 .resumeheadcontainer {
-    padding: 5%;
+    padding: 10px 12%;
 }
 
 .resumelocation, .resumemail, .resumetel {
@@ -153,6 +154,10 @@ img.headshotimg:hover {
 }
 
 /* Projects Page */
+
+.projectcontainer {
+    display: flex;
+}
 
 
 
